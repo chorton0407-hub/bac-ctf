@@ -1,7 +1,4 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
-
-
   "version": 2,
   "functions": {
     "api/index.js": {
@@ -9,11 +6,10 @@
       "maxDuration": 10
     }
   },
-
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "api/index.js"
+      "source": "/(.*)",
+      "destination": "/api/index"
     }
   ]
 }
