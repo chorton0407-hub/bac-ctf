@@ -128,7 +128,7 @@ app.get("/notes/:id", requireLogin, (req, res) => {
     <h1>${note.title}</h1>
     <pre>${note.body}</pre>
     <p>Note ID: ${note.id}</p>
-    <p>Owner ID (for debugging): ${note.ownerId}</p>
+    <p>Owner ID: ${note.ownerId}</p>
     <p><a href="/">Back</a></p>
   `);
 });
